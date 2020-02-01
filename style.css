@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap');
+
+/* . -> cible une class et #-> cible une id */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*on utilise > pour cibler la liste ul ( enfant direct de nav ) */
+
+
+/* section 1 */
+
+#homepage {
+    background-image: url(../laptop-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titre {
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    margin-left: -510px;
+    color: rgb(6, 82, 56);
+    background-color: rgba(255, 248, 220, 0.219);
+}
+
+.cadre {
+    background-color: rgba(152, 251, 152, 0.397);
+}
+
+h3 {
+    color: rgb(47, 47, 97);
+    background-color: burlywood;
+    padding: 3px;
+    margin-right: 80%;
+    margin-left: 5%;
+    margin-top: 12%;
+}
+
+h4 {
+    color: black;
+    background-color: red;
+}
+
+.video {
+    background-color: rgb(55, 55, 58);
+}
+
+.text {
+    top: 50%;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #555;
+    padding: 3%;
+    color: #000000;
+    background-color: rgba(222, 184, 135, 0.507);
+}
+
+.menu {
+    position: relative;
+    top: 40%;
+}
+
+hr {
+    margin: 0%;
+}
+
+
+/* list-style-type none c'est pour ne avoir de puce devant les elements de notre liste */
+
+h1 {
+    margin: 0%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 66px;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 10px;
+}
+
+nav>ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    border-bottom: 1px solid rgb(90, 92, 117);
+}
+
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #ffffff;
+    width: 270 px;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    text-align: center;
+}
+
+nav>ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    padding: 20px 30px;
+    color: rgb(15, 11, 11);
+}
+
+nav>ul>li>a {
+    padding: 20px 30px;
+    color: rgb(27, 21, 21);
+}
+
+.articles:hover {
+    border-top: 5px solid #e44d26;
+    background-color: rgba(116, 196, 176, 0.219);
+}
+
+.podcast:hover {
+    border-top: 5px solid #0070bb;
+    background-color: rgba(110, 194, 145, 0.15);
+}
+
+.myart:hover {
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(150, 104, 138, 0.15);
+}
+
+.apropos:hover {
+    border-top: 5px solid #49aa8d;
+    background-color: rgba(116, 61, 108, 0.151);
+}
+
+nav>ul>li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+
+.submenu {
+    background-color: rgba(85, 86, 94, 0.637);
+}
+
+.submenu li:hover a {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+.submenu li:hover {
+    background-color: rgb(55, 55, 58)
+}
+
+.titrepage {
+    text-align: left;
+}
+
+aside {
+    float: left;
+    width: 160px;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(157, 184, 168, 0.192);
+}
+
+aside :hover {
+    background-color: rgba(157, 184, 168, 0.192);
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 2rem
+    }
+    header {
+        margin: 0%;
+    }
+}
+
+.bouton a {
+    margin-left: 79rem;
+    margin-top: 4rem;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    border-radius: 75%;
+    border-bottom: 7px solid #e6c5c5;
+    font: bold 13px Arial;
+    color: #555;
+    background: #fff;
+    box-shadow: 4px 4px 3px #999;
+    border-top: 2px solid #030701;
+    font-family: 'Dancing Script', cursive;
+}
+
+.bouton {
+    float: left;
+}
